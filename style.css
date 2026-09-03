@@ -214,8 +214,11 @@
     .hero .container .content svg text {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: clamp(130px, 50vw, 410px);
+    font-size: clamp(1.8rem, 6vw, 4.5rem);
+    letter-spacing: 0.04em;
     animation: stroke 5s infinite alternate;
+    text-anchor: middle;
+    dominant-baseline: middle;
     }
 
     .hero .container .content h1 {
@@ -1002,8 +1005,14 @@
     }
 
     .hero .container .content svg {
-        margin-bottom: -2rem;
+        margin-bottom: -1.5rem;
         width: 100%;
+        min-height: 80px;
+    }
+
+    .hero .container .content svg text {
+        font-size: clamp(1.2rem, 8vw, 2.6rem);
+        letter-spacing: 0.03em;
     }
 
     .hero .container .content button {
