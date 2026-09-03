@@ -109,18 +109,8 @@
     align-items: center;
     margin-left: 10px;
     margin-right: 20px;
-    background: linear-gradient(45deg, #ff006e, #ff8c00, #ffd700, #00ff87, #00a8ff, #b600ff, #ff006e);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbowText 3s linear infinite;
-    }
-
-    @keyframes rainbowText {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    color: #fff;
+    text-shadow: -3px 0 8px rgba(0, 255, 200, 0.5), 3px 0 8px rgba(255, 0, 150, 0.5);
     }
 
     header nav {
@@ -214,7 +204,7 @@
     .hero .container .content svg text {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: clamp(1.8rem, 6vw, 4.5rem);
+    font-size: clamp(4rem, 14vw, 8rem);
     letter-spacing: 0.04em;
     animation: stroke 5s infinite alternate;
     text-anchor: middle;
@@ -409,16 +399,8 @@
     position: absolute;
     inset: -4px;
     border-radius: 14px;
-    background: linear-gradient(45deg, #ff006e, #ff8c00, #ffd700, #00ff87, #00a8ff, #b600ff, #ff006e);
-    background-size: 300% 300%;
-    animation: rainbowBorder 3s linear infinite;
+    background: #333;
     z-index: -1;
-    }
-
-    @keyframes rainbowBorder {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
     }
 
     .skill .container .content .skills .skill-box .skill-label {
@@ -504,9 +486,7 @@
     position: absolute;
     inset: -4px;
     border-radius: 20px;
-    background: linear-gradient(45deg, #ff006e, #ff8c00, #ffd700, #00ff87, #00a8ff, #b600ff, #ff006e);
-    background-size: 300% 300%;
-    animation: rainbowBorder 3s linear infinite;
+    background: #333;
     z-index: -1;
     }
 
@@ -1011,7 +991,7 @@
     }
 
     .hero .container .content svg text {
-        font-size: clamp(1.2rem, 8vw, 2.6rem);
+        font-size: clamp(2.2rem, 12vw, 4.5rem);
         letter-spacing: 0.03em;
     }
 
