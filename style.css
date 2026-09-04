@@ -814,6 +814,11 @@
     .container {
         padding: 1rem 1.5rem;
     }
+
+    .hero .container .content svg text {
+        font-size: clamp(2.4rem, 8vw, 6rem);
+        letter-spacing: 0.03em;
+    }
     }
 
     @media screen and (max-width: 1024px) {
@@ -920,6 +925,11 @@
     }
 
     @media screen and (max-width: 768px) {
+    .hero .container .content svg text {
+        font-size: clamp(1.8rem, 7vw, 3.6rem);
+        letter-spacing: 0.02em;
+    }
+
     .skill .container .content .skills {
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
         width: 100%;
@@ -991,8 +1001,8 @@
     }
 
     .hero .container .content svg text {
-        font-size: clamp(2.2rem, 12vw, 4.5rem);
-        letter-spacing: 0.03em;
+        font-size: clamp(1.4rem, 10vw, 2.8rem);
+        letter-spacing: 0.01em;
     }
 
     .hero .container .content button {
