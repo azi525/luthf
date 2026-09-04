@@ -987,7 +987,7 @@
     header .logo a {
         margin-left: 5px;
         margin-right: 10px;
-        font-size: clamp(1.7rem, 7vw, 2.5rem);
+        font-size: clamp(2.2rem, 8vw, 3.2rem);
     }
 
     .hero {
@@ -996,15 +996,15 @@
     }
 
     .hero .container .content svg {
-        margin-bottom: -0.5rem;
-        width: 110%;
-        min-height: 80px;
+        margin-bottom: -0.8rem;
+        width: 120%;
+        min-height: 90px;
     }
 
     .hero .container .content svg text {
-        font-size: clamp(2.8rem, 12vw, 4.5rem);
+        font-size: clamp(3.2rem, 15vw, 5.6rem);
         letter-spacing: 0.01em;
-        font-weight: 800;
+        font-weight: 900;
     }
 
     .hero .container .content button {
