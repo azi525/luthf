@@ -194,17 +194,22 @@
     }
 
     .hero .container .content svg {
-    margin-bottom: -5rem;
+    margin-bottom: -4rem;
     width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     height: auto;
     overflow: visible;
     }
 
     .hero .container .content svg text {
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 1.5;
+    paint-order: stroke fill;
+    font-family: "Times New Roman", Georgia, serif;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: clamp(4rem, 14vw, 8rem);
+    font-weight: 700;
+    font-size: clamp(2.8rem, 7vw, 8rem);
     letter-spacing: 0.04em;
     animation: stroke 5s infinite alternate;
     text-anchor: middle;
@@ -369,25 +374,28 @@
 
     .skill .container .content .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(5, minmax(110px, 1fr));
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    width: 95%;
-    max-width: 1000px;
+    justify-items: center;
+    gap: 16px;
+    width: min(100%, 900px);
+    max-width: 900px;
     }
 
     .skill .container .content .skills .skill-box {
-    padding: 8px;
-    border-radius: 12px;
-    background-color: #191919;
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 1;
+    padding: 18px;
+    border-radius: 14px;
+    background-color: #000;
+    border: 3px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    aspect-ratio: 1;
-    min-height: 80px;
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
@@ -395,15 +403,11 @@
     }
 
     .skill .container .content .skills .skill-box::before {
-    content: "";
-    position: absolute;
-    inset: -4px;
-    border-radius: 14px;
-    background: #333;
-    z-index: -1;
+    display: none;
     }
 
     .skill .container .content .skills .skill-box .skill-label {
+    display: none;
     font-size: clamp(0.7rem, 1.5vw, 0.9rem);
     font-weight: 600;
     color: #fff;
@@ -461,18 +465,19 @@
 
     .project .container .content .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
     align-items: start;
     justify-content: center;
     gap: 20px;
     width: 95%;
-    max-width: 1200px;
+    max-width: 1100px;
     }
 
     .project .container .content .projects .card {
     padding: 16px;
     border-radius: 16px;
-    background-color: #191919;
+    background-color: #000;
+    border: 3px solid #fff;
     height: auto;
     min-height: 450px;
     display: flex;
@@ -482,12 +487,7 @@
     }
 
     .project .container .content .projects .card::before {
-    content: "";
-    position: absolute;
-    inset: -4px;
-    border-radius: 20px;
-    background: #333;
-    z-index: -1;
+    display: none;
     }
 
     .project .container .content .projects .card img {
@@ -790,21 +790,21 @@
 
     @keyframes stroke {
     0% {
-        stroke: white;
-        stroke-width: 0;
+        stroke: rgba(255, 255, 255, 0.8);
+        stroke-width: 0.5;
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
     }
     70% {
-        stroke: white;
+        stroke: #fff;
     }
     80% {
-        stroke: white;
-        stroke-width: 3;
+        stroke: #fff;
+        stroke-width: 2.5;
     }
     100% {
-        stroke: white;
-        stroke-width: 0;
+        stroke: rgba(255, 255, 255, 0.9);
+        stroke-width: 1;
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
     }
